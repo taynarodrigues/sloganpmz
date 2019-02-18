@@ -2,7 +2,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
-import { PhotosModule } from './photos/photos.module';
+
+// Importando o módulo de formulários reativos do angular
+import { ReactiveFormsModule } from "@angular/forms";
+
+
 
 @NgModule({
   declarations: [
@@ -10,7 +14,7 @@ import { PhotosModule } from './photos/photos.module';
   ],
   imports: [
     BrowserModule,
-    PhotosModule
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
